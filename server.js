@@ -13,7 +13,15 @@ app.post("/consumer", async ({ body }, res) => {
     const peer = new webrtc.RTCPeerConnection({
         iceServers: [
             {
-                urls: "stun:stun.stunprotocol.org"
+                urls: [
+                    'stun:stun1.l.google.com:19302',
+                    'stun:stun3.l.google.com:19302',
+                ]
+            },
+            {
+                urls: 'turn:132.206.74.208:3478',
+                credential: 'ecAK8id7Rb6Q0qVJtZrsY+joKVM=',
+                username: '1621283332'
             }
         ]
     });
