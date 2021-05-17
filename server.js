@@ -9,6 +9,8 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+const PORT = process.env.PORT || 3000;
+
 app.post("/consumer", async ({ body }, res) => {
     const peer = new webrtc.RTCPeerConnection({
         iceServers: [
@@ -62,4 +64,4 @@ function handleTrackEvent(e, peer) {
 };
 
 
-app.listen(3000, () => console.log('server started'));
+app.listen(PORT, () => console.log('server started'));
