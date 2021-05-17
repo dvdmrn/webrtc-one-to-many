@@ -22,8 +22,8 @@ app.post("/consumer", async ({ body }, res) => {
             },
             {
                 urls: 'turn:132.206.74.208:3478',
-                credential: 'ecAK8id7Rb6Q0qVJtZrsY+joKVM=',
-                username: '1621283332'
+                credential: 'LagUJwx/5rIdlQSWtGvcR40oJf0=',
+                username: '1621293001'
             }
         ]
     });
