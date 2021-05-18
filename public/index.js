@@ -18,13 +18,12 @@ function createPeer() {
             {
                 urls: [
                     'stun:stun1.l.google.com:19302',
-                    'stun:stun3.l.google.com:19302',
                 ]
             },
             {
                 urls: 'turn:132.206.74.208:3478',
-                credential: 'LagUJwx/5rIdlQSWtGvcR40oJf0=',
-                username: '1621293001'
+                credential: 'i8elseT+hOP8OiOxoQCfUFHO9+s=',
+                username: '1621317770'
             }
         ]
     });
